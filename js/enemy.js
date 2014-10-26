@@ -2,7 +2,7 @@ var Enemy = function(x, y) {
 	var min = 3;
 	var max = 7;
 	Entity.prototype.constructor.call(this, x, y, 'images/enemy-bug.png');
-	this.speed = randomInteger(min, max);
+	this.speed = Math.floor(Math.random() * (max - min)) + min;
 }
 
 Enemy.prototype = Object.create(Entity.prototype);
@@ -16,7 +16,7 @@ Enemy.prototype.update = function(dt) {
 	if(this.x > 500)
 	{
 		this.x = -100;
-		this.speed = randomInteger(3, 7);
+		this.speed = Math.floor(Math.random() * (7 - 3)) + 3;
 		goneOffScreen = true;
 	}
 
@@ -25,12 +25,4 @@ Enemy.prototype.update = function(dt) {
 		y : this.y, 
 		dodged: goneOffScreen 
 	};
-}
-
-//
-// Random Integer
-// Minimum 
-// Maximum
-Enemy.prototype.randomInteger = function(min, max){
-	return Math.floor(Math.random() * (max - min)) + min;
 }
