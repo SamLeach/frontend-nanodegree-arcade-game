@@ -3,16 +3,36 @@
 <head>
     <title>Effective JavaScript: Frogger</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="lib/sweet-alert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/sweet-alert.css">
 </head>
 <body>
+
+    <h1>Udacity: Object-Oriented JavaScript</h1>
+    <h2>Writing Reusable and Maintainable Code</h2>
+    <h3><a href="http://samleach.azurewebsites.net" target="_blank">Sam Leach's</a> Final Project</h3>
+
     <label>Score: <span id="score">0</span></label></br>
     <label>Deaths: <span id="deaths">0</span></label></br>
-    <label>Enemies Dodged: <span id="dodged">0</span></label></br>
+    <label>Enemies Dodged: <span id="dodged">0</span></label></br></br>
+
+    <div id="debug">
+        <label>Player Position: <span id="player-position">0</span></label></br>
+        <label>Player Square: <span id="player-square">0</span></label></br>
+        <label>Enemy1 Position: <span id="enemy1-position">0</span></label></br>
+        <label>Enemy1 Square: <span id="enemy1-square">(0, 0)</span></label></br>
+        <label>Enemy2 Position: <span id="enemy2-position">0</span></label></br>
+        <label>Enemy2 Square: <span id="enemy2-square">(0, 0)</span></label></br>
+        <label>Enemy3 Position: <span id="enemy3-position">0</span></label></br>
+        <label>Enemy3 Square: <span id="enemy3-square">(0, 0)</span></label></br>
+    </div>
+
     <script src="js/resources.js"></script>
     <script src="js/entity.js"></script>
     <script src="js/player.js"></script>
     <script src="js/enemy.js"></script>
-    <script src="js/app.js"></script>
     <script src="js/engine.js"></script>
 </body>
 </html>

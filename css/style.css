@@ -1,3 +1,52 @@
 body {
+	font-family: 'Open Sans', sans-serif;
     text-align: center;
+}
+
+#score{
+	color: green;
+}
+
+#deaths{
+	color: red;
+}
+
+#dodged{
+	color: blue;
+}
+
+#player-square{
+	color: red;
+}
+
+#player-position{
+	color: red;
+}
+
+#enemy1-square{
+	color: green;
+}
+
+#enemy1-position{
+	color: green;
+}
+
+#enemy2-square{
+	color: blue;
+}
+
+#enemy2-position{
+	color: blue;
+}
+
+#enemy3-square{
+	color: orange;
+}
+
+#enemy3-position{
+	color: orange;
+}
+
+#debug{
+	display: none;
 }
