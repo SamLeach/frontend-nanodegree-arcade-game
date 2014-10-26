@@ -43,6 +43,7 @@ TODOs:
 <li>Allow player to select player image and enemy image</li>
 <li>Add sign-up and leader board</li>
 <li>Add CSS or image explaining the keys needed</li>
+<li>Achievements</li>
 <li>Review performance & optimise</li>
 </ol>
 
